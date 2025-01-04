@@ -191,7 +191,10 @@ hr {
 @media (max-width: 576px) {
     .choices button {
         font-size: 2rem;
-        min-width: 80px;
+        min-width: 70px;
+        background: black;
+        opacity : 0.9;
+
     }
 
     .scoreDisplay {
@@ -215,7 +218,7 @@ h1 {
 }
 
 .scoreDisplay {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 }
