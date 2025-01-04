@@ -87,25 +87,25 @@ function playGame(playerChoice) {
   }
 }
 
-document.querySelectorAll(".choices button").forEach((button) => {
-  button.addEventListener("click", function () {
-    // Remove existing tooltips
-    document
-      .querySelectorAll(".tooltip")
-      .forEach((tooltip) => tooltip.remove());
+// document.querySelectorAll(".choices button").forEach((button) => {
+//   button.addEventListener("click", function () {
+//     // Remove existing tooltips
+//     document
+//       .querySelectorAll(".tooltip")
+//       .forEach((tooltip) => tooltip.remove());
 
-    // Create a new tooltip
-    const tooltip = document.createElement("div");
-    tooltip.className = "tooltip";
-    tooltip.textContent = this.getAttribute("data-title");
-    document.body.appendChild(tooltip);
+//     // Create a new tooltip
+//     const tooltip = document.createElement("div");
+//     tooltip.className = "tooltip";
+//     tooltip.textContent = this.getAttribute("data-title");
+//     document.body.appendChild(tooltip);
 
-    // Position the tooltip
-    const rect = this.getBoundingClientRect();
-    tooltip.style.left = `${rect.left + rect.width / 2}px`;
-    tooltip.style.top = `${rect.top - tooltip.offsetHeight}px`;
+//     // Position the tooltip
+//     const rect = this.getBoundingClientRect();
+//     tooltip.style.left = `${rect.left + rect.width / 2}px`;
+//     tooltip.style.top = `${rect.top - tooltip.offsetHeight}px`;
 
-    // Remove the tooltip after a delay
-    setTimeout(() => tooltip.remove(), 2000);
-  });
-});
+//     // Remove the tooltip after a delay
+//     setTimeout(() => tooltip.remove(), 2000);
+//   });
+// });
