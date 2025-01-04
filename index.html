@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rock &bull; Paper &bull; Scissors  &bull; Spock &bull; Lizard</h1>
+
+    <hr/>
+    <div class="choices">
+
+        <button onclick = "playGame('rock') " data-title = "Rock">✊</button>
+        <button onclick = "playGame('paper')" data-title = "Paper">🖐</button>
+        <button onclick = "playGame('scissors')" data-title = "Scissors">✌️</button> 
+        <button onclick = "playGame('lizard')" data-title = "Lizard">🦎</button>
+        <button onclick = "playGame('spock')" data-title = "Spock">🖖</button> 
+        
+    </div>
+
+
+    <div id="playerDisplay">
+        <!-- <h2>Player :</h2> -->
+        
+    </div>
+
+    <div id="computerDisplay">
+        <!-- <h2>Computer : </h2> -->
+        
+    </div>
+
+
+    <div id = "resultDisplay">
+        <!-- <h2>Result : </h2> -->
+    </div>
+
+    <div class="scoreDisplay">
+        Player score : <span id="playerScore">0</span> 
+       
+    </div>
+
+    <div class="scoreDisplay">
+      Computer score : <span id="computerScore">0</span>
+       
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
