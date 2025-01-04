@@ -27,7 +27,7 @@ function playGame(playerChoice) {
       case "rock":
         result =
           computerChoice === "scissors" || computerChoice === "lizard"
-            ? "You win 🏆" 
+            ? "You win 🏆"
             : "You lose 😭";
         break;
 
@@ -64,21 +64,21 @@ function playGame(playerChoice) {
   computerDisplay.textContent = `Computer : ${computerChoice}`;
   resultDisplay.textContent = result;
 
-    resultDisplay.classList.remove("green-text", "red-text", "orange-text");
-    
-    console.log(`Result : ${result.trim()}`);
+  resultDisplay.classList.remove("green-text", "red-text", "orange-text");
+
+  console.log(`Result : ${result.trim()}`);
 
   switch (result.trim()) {
     case "You win 🏆":
-        resultDisplay.classList.add("green-text");
-        playerScoreValue++;
-        playerScore.textContent = playerScoreValue;
+      resultDisplay.classList.add("green-text");
+      playerScoreValue++;
+      playerScore.textContent = playerScoreValue;
       break;
 
     case "You lose 😭":
-          resultDisplay.classList.add("red-text");
-            computerScoreValue++;
-            computerScore.textContent = computerScoreValue;
+      resultDisplay.classList.add("red-text");
+      computerScoreValue++;
+      computerScore.textContent = computerScoreValue;
       break;
 
     case "It's a tie!":
@@ -109,3 +109,4 @@ function playGame(playerChoice) {
 //     setTimeout(() => tooltip.remove(), 2000);
 //   });
 // });
+
