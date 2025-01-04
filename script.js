@@ -70,15 +70,15 @@ function playGame(playerChoice) {
 
   switch (result.trim()) {
     case "You win 🏆":
-          resultDisplay.classList.add("green-text");
-          playerScoreValue++;
-            playerScore.textContent = playerScoreValue;
+        resultDisplay.classList.add("green-text");
+        playerScoreValue++;
+        playerScore.textContent = playerScoreValue;
       break;
 
     case "You lose 😭":
           resultDisplay.classList.add("red-text");
             computerScoreValue++;
-                computerScore.textContent = computerScoreValue;
+            computerScore.textContent = computerScoreValue;
       break;
 
     case "It's a tie!":
