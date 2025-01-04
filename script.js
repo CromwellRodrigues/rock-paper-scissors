@@ -1,4 +1,4 @@
-const choices = ["rock", "paper", "scissors", "lizard", "spock"];
+const choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 
 const playerDisplay = document.getElementById("playerDisplay");
 
@@ -24,37 +24,37 @@ function playGame(playerChoice) {
     result = "It's a tie!";
   } else {
     switch (playerChoice) {
-      case "rock":
+      case "Rock":
         result =
-          computerChoice === "scissors" || computerChoice === "lizard"
+          computerChoice === "Scissors" || computerChoice === "Lizard"
             ? "You win 🏆"
             : "You lose 😭";
         break;
 
-      case "paper":
+      case "Paper":
         result =
-          computerChoice === "rock" || computerChoice === "spock"
+          computerChoice === "Rock" || computerChoice === "Spock"
             ? "You win 🏆"
             : "You lose 😭";
         break;
 
-      case "scissors":
+      case "Scissors":
         result =
-          computerChoice === "paper" || computerChoice === "lizard"
+          computerChoice === "Paper" || computerChoice === "Lizard"
             ? "You win 🏆"
             : "You lose 😭";
         break;
 
-      case "lizard":
+      case "Lizard":
         result =
-          computerChoice === "spock" || computerChoice === "paper"
+          computerChoice === "Spock" || computerChoice === "Paper"
             ? "You win 🏆"
             : "You lose 😭";
         break;
 
-      case "spock":
+      case "Spock":
         result =
-          computerChoice === "rock" || computerChoice === "scissors"
+          computerChoice === "Rock" || computerChoice === "Scissors"
             ? "You win 🏆"
             : "You lose 😭";
     }
